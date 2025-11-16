@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+.bg-dark-charcoal {
+  background-color: #2C2C2C;
+}
+
+.bg-fashion-pink {
+  background-color: #EC4899;
+}
+
+.bg-fashion-pink-dark {
+  background-color: #DB2777;
+}
+
+.text-fashion-pink {
+  color: #EC4899;
+}
+
+.text-fashion-pink-dark {
+  color: #DB2777;
+}
+
+.border-fashion-pink {
+  border-color: #EC4899;
+}
+
+.high-contrast-mode .bg-blue-50 {
+  background-color: rgb(255 255 255) !important;
+}
+
+.high-contrast-mode .text-blue-600,
+.high-contrast-mode .text-blue-700 {
+  color: rgb(0 0 0) !important;
+}
+
+/* Стили для активных подкатегорий в высокой контрастности */
+.high-contrast-mode .text-blue-600.font-medium.bg-blue-50 {
+  background-color: rgb(255 255 255) !important;
+  color: rgb(0 0 0) !important;
+  border: 1px solid rgb(0 0 0) !important;
+}
+
+/* Стили для активных категорий в высокой контрастности */
+.high-contrast-mode .bg-blue-50.text-blue-700 {
+  background-color: rgb(255 255 255) !important;
+  color: rgb(0 0 0) !important;
+  border: 1px solid rgb(0 0 0) !important;
+}
+
+/* Стили для ховер-состояний в высокой контрастности */
+.high-contrast-mode .hover\:bg-gray-100:hover {
+  background-color: rgb(255 255 255) !important;
+  color: rgb(0 0 0) !important;
+}
+
+.high-contrast-mode .hover\:bg-gray-50:hover {
+  background-color: rgb(255 255 255) !important;
+  color: rgb(0 0 0) !important;
+}
+
+/* Стили для высокой контрастности - ИСПРАВЛЕННЫЕ */
+.high-contrast-mode {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0) !important;
+  color: rgb(255 255 255) !important;
+}
+
+.high-contrast-mode .bg-white,
+.high-contrast-mode .bg-gray-50,
+.high-contrast-mode .bg-gray-100 {
+  background-color: rgb(0 0 0) !important;
+  color: rgb(255 255 255) !important;
+  border-color: rgb(255 255 255) !important;
+}
+
+.high-contrast-mode .text-gray-900,
+.high-contrast-mode .text-gray-700,
+.high-contrast-mode .text-gray-600,
+.high-contrast-mode .text-gray-500 {
+  color: rgb(255 255 255) !important;
+}
+
+/* 
+.high-contrast-mode .text-gray-700:hover {
+    color: rgb(0 0 0) !important;
+} */
+
+.high-contrast-mode .border-gray-200,
+.high-contrast-mode .border-gray-300 {
+  border-color: rgb(255 255 255) !important;
+}
+
+.high-contrast-mode .shadow-sm,
+.high-contrast-mode .shadow-lg {
+  box-shadow: 0 1px 3px 0 rgba(255, 255, 255, 0.8) !important;
+}
+
+.high-contrast-mode .bg-blue-600 {
+  background-color: rgb(255 255 255) !important;
+  color: rgb(0 0 0) !important;
+}
+
+.high-contrast-mode .text-blue-600 {
+  color: rgb(255 255 255) !important;
+}
+
+.high-contrast-mode .hover\\:bg-blue-700:hover {
+  background-color: rgb(200 200 200) !important;
+}
+
+.grayscale-mode {
+  filter: grayscale(100%) !important;
+}
+
+/* Исключаем виджет из фильтра grayscale */
+.grayscale-mode .accessibility-widget {
+  filter: none !important;
+}
+
+/* Кастомный стиль для range input */
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #3b82f6;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slider::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #3b82f6;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slider::-webkit-slider-track {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+}
+
+.slider::-moz-range-track {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  border: none;
+}
+
+/* Стили для high-contrast слайдера */
+.high-contrast-mode .slider::-webkit-slider-thumb {
+  background: #ffffff;
+  border: 2px solid #000000;
+}
+
+.high-contrast-mode .slider::-moz-range-thumb {
+  background: #ffffff;
+  border: 2px solid #000000;
+}
+
+.high-contrast-mode .slider::-webkit-slider-track {
+  background: #666666;
+}
+
+.high-contrast-mode .slider::-moz-range-track {
+  background: #666666;
+}
