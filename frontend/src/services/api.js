@@ -157,6 +157,7 @@ class ApiService {
       method: "DELETE",
     });
   }
+  
   async getBrands() {
     return this.request("/brands/");
   }

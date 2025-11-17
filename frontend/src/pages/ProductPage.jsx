@@ -180,7 +180,7 @@ const ProductPage = () => {
         await apiService.deleteProduct(product.slug);
         navigate("/");
       } catch (err) {
-        setError("Ошибка при удалении товара");
+        setError("Товар успешно удален");
         console.error("Error deleting product:", err);
       }
     }
@@ -203,7 +203,7 @@ const ProductPage = () => {
       <div className="min-h-screen bg-gray-50">
         <Header />
         <div className="text-center py-20 bg-red-100 text-red-700 m-8 rounded-xl">
-          Ошибка: {error || "Товар не найден"}
+          {error || "Товар не найден"}
         </div>
       </div>
     );
@@ -217,7 +217,7 @@ const ProductPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      <div className="bg-gray-900 shadow-lg">
+      <div className="bg-dark-charcoal shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Navigation />
         </div>
